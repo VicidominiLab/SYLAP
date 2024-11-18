@@ -35,10 +35,10 @@ module top(
 //    assign J13=simPulseFineDelayed;
 //    assign J14=simPulseFineDelayed;
 
-    assign J11=simLaser;
+    assign J11=simStart;
     assign J12=!simLaser;
     assign J13=simPulseFineDelayed;
-    assign J14=simStart;
+    assign J14=simLaser;
     
     assign extraHPC[2]=simLaser;
     assign extraHPC[3]=!simLaser;

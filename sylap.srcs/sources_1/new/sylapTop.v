@@ -55,7 +55,22 @@ module sylapTop(
     assign output_simStart = simStart;
     
     
-    
+    ila_0 ila_0_inst(
+        .clk(clk_50),
+        .probe0(UartRxDV),              
+        .probe1(uartRxData),   
+        .probe2(enableGenerator),         
+        .probe3(pulseLength),           
+        .probe4(pulseOffset),           
+        .probe5(pulseOffsetPlusLength), 
+        .probe6(laserLengthHalf),       
+        .probe7(laserCountsMax),        
+        .probe8(lastValidValue),
+        .probe9(fineDelay1),
+        .probe10(fineDelay2),
+        .probe11(fineDelay3),
+        .probe12(resetCmd)
+    );
     
     
     
